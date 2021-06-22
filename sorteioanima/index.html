@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style></style>
+    <title>Document</title>
+    <style>
+        * {
+            color: blueviolet;
+            font-weight: bolder;
+        }
+        
+        body {
+            background-color: rgb(182, 99, 140);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        .container {
+            width: 750px;
+            height: 400px;
+            background-image: url('anima.png');
+            background-size: cover;
+            background-position: center;
+            align-self: center;
+            margin: auto;
+        }
+        
+        .inputs {
+            display: flex;
+        }
+        
+        .n1,
+        .n2 {
+            width: 100px;
+            height: 100px;
+            font-size: 30px;
+            text-align: center;
+            border-radius: 15px;
+            outline: none;
+            border: 0;
+            margin: 10px;
+        }
+        
+        .sort {
+            display: flex;
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            border-radius: 100px;
+            font-size: 40px;
+            text-align: center;
+            align-items: center;
+        }
+        
+        .sortt {
+            font-size: 50px;
+            text-align: center;
+            margin-left: 60px;
+        }
+        
+        .sortte {
+            width: 100px;
+            border-radius: 15px;
+            background-color: white;
+            margin-left: 10px;
+        }
+        
+        .botao {
+            width: 100px;
+            height: 35px;
+            font-size: 20px;
+            border-radius: 10px;
+            border: 0;
+            margin-top: 10px;
+            border: 2px solid blueviolet;
+            margin-bottom: 15px;
+        }
+        
+        .sortti {
+            margin-top: 10px;
+            font-size: 30px;
+        }
+        
+        .vencedora {
+            min-height: 100px;
+            width: 300px;
+            background-color: aliceblue;
+            border-radius: 10px;
+            margin-left: 10px;
+            text-align: center;
+            font-size: 20px;
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container"> </div>
+    <div class="botoes">
+        <button class="botao" onclick="sortiar()">Sortear</button>
+        <button class="botao vermelho" onclick="limpar()"> limpar</button>
+    </div>
+    <div class="inputs">
+        <input type="number" class="n1">
+        <div class="sort">
+            <div class="sortt"></div>
+
+        </div>
+        <div class="sortte">
+            <div class="sortti"></div>
+        </div>
+        <div class="vencedora"></div>
+
+    </div>
+
+
+
+    <script>
+        let i = '';
+        let x = '';
+
+
+        function sortiar() {
+            i++
+            let n1 = document.querySelector('.n1').value;
+
+            let numero = Math.floor(Math.random() * n1);
+            document.querySelector('.sortt').innerHTML = numero;
+            document.querySelector('.sortti').innerHTML += i + 'º:' +
+                numero + '<br/>';
+            let numeroatual = numero
+            testar(numeroatual)
+        }
+
+        function limpar() {
+            document.querySelector('.sortti').innerHTML = '';
+            document.querySelector('.sortt').innerHTML = '';
+            document.querySelector('.vencedora').innerHTML = '';
+            i = '';
+            x = '';
+        }
+
+        function testar(numeroatual) {
+            x++;
+
+            switch (numeroatual) {
+                case 8:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Clemilda' + '<br/>';
+                    break;
+                case 41:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Wanderlucia' + '<br/>';
+                    break;
+                case 21:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'MachadoLorena' + '<br/>';
+                    break;
+                case 87:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'NayaraFerreira' + '<br/>';
+                    break;
+                case 88:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'LealNaisa' + '<br/>';
+                    break;
+                case 36:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Nedir' + '<br/>';
+                    break;
+                case 26:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'nayara Ferreira' + '<br/>';
+                    break;
+                case 10:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Karla Cunha' + '<br/>';
+                    break;
+                case 89:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Karla Cunha' + '<br/>';
+                    break;
+                case 81:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'AnaLice' + '<br/>';
+                    break;
+                case 85:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Vânia' + '<br/>';
+                    break;
+                case 79:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Vânia' + '<br/>';
+                    break;
+                case 49:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Vânia' + '<br/>';
+                    break;
+                case 16:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'MachadoLorena' + '<br/>';
+                    break;
+                case 27:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Nayara' + '<br/>';
+                    break;
+                case 19:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'LealNaisa' + '<br/>';
+                    break;
+                case 47:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'LealNaisa' + '<br/>';
+                    break;
+                case 45:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Amanda' + '<br/>';
+                    break;
+                case 103:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Amanda' + '<br/>';
+                    break;
+                case 15:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Divina Maria' + '<br/>';
+                    break;
+                case 6:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Divina Maria' + '<br/>';
+                    break;
+                case 30:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Nayara Ferreira' + '<br/>';
+                    break;
+                case 4:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Nayara Ferreira' + '<br/>';
+                    break;
+                case 110:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Karla Cunha' + '<br/>';
+                    break;
+                case 44:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Ana Maria' + '<br/>';
+                    break;
+                case 96:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Ana Maria' + '<br/>';
+                    break;
+                case 51:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Roseane BEBEZINHA' + '<br/>';
+                    break;
+                case 50:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Jessica' + '<br/>';
+                    break;
+                case 78:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Machado Lorena' + '<br/>';
+                    break;
+                case 32:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Jessica' + '<br/>';
+                    break;
+                case 112:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Hendly' + '<br/>';
+                    break;
+                case 98:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Ana Alice' + '<br/>';
+                    break;
+                case 77:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Ana Alice' + '<br/>';
+                    break;
+                case 104:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Ana Alice' + '<br/>';
+                    break;
+                case 62:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Thaynara' + '<br/>';
+                    break;
+                case 113:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Thaynara' + '<br/>';
+                    break;
+                case 79:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Thaynara' + '<br/>';
+                    break;
+                case 20:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Bia Bianthos' + '<br/>';
+                    break;
+                case 83:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Nayara' + '<br/>';
+                    break;
+                case 53:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Nayara' + '<br/>';
+                    break;
+                case 84:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Wanderlucia' + '<br/>';
+                    break;
+                case 105:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Wanderlucia' + '<br/>';
+                    break;
+                case 70:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Rosiane BEBE' + '<br/>';
+                    break;
+                case 37:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Rosiane BEBE' + '<br/>';
+                    break;
+                case 22:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Rosiane BEBE' + '<br/>';
+                    break;
+                case 31:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'LealNaisa' + '<br/>';
+                    break;
+                case 7:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Nayara Ferreira' + '<br/>';
+                    break;
+                case 100:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + '42-Carolina' + '<br/>';
+                    break;
+                case 1:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + '42-Carolina' + '<br/>';
+                    break;
+                case 34:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + '42-Carolina' + '<br/>';
+                    break;
+                case 75:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + '42-Carolina' + '<br/>';
+                    break;
+                case 101:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Machado Lorena' + '<br/>';
+                    break;
+                case 101:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Machado Lorena' + '<br/>';
+                    break;
+                case 102:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Jordana' + '<br/>';
+                    break;
+                case 12:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'LealNaisa' + '<br/>';
+                    break;
+                case 13:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'LealNaisa' + '<br/>';
+                    break;
+                case 122:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Meyre Gonsalves' + '<br/>';
+                    break;
+                case 123:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Meyre Gonsalves' + '<br/>';
+                    break;
+                case 33:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Nayara Ferreira' + '<br/>';
+                    break;
+                case 118:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Machado Lorena' + '<br/>';
+                    break;
+                case 119:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Meyre Gonsalves' + '<br/>';
+                    break;
+                case 56:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Katia ' + '<br/>';
+                    break;
+                case 114:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Divina Maria' + '<br/>';
+                    break;
+                case 99:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Karla Cunha' + '<br/>';
+                    break;
+                case 57:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'LealNaisa' + '<br/>';
+                    break;
+                case 54:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Meyre Gonsalves' + '<br/>';
+                    break;
+                case 115:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Leal Naisa' + '<br/>';
+                    break;
+                case 116:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Meyre Gonsalves' + '<br/>';
+                    break;
+                case 117:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Vivi Alessandra' + '<br/>';
+                    break;
+                case 124:
+                    document.querySelector('.vencedora').innerHTML += x + 'º=' + 'Alessandro Luiz' + '<br/>';
+                    break;
+                default:
+                    document.querySelector('.vencedora').innerHTML += '-----' + '<br/>';
+                    x--
+                    break;
+            }
+        }
+    </script>
+</body>
+
+</html>

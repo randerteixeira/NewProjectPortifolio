@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    font-family: 'Itim', cursive;
+}
+
+.body {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.acima {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-image: url('../images/foto_logo.png');
+}
+
+.text_name {
+    font-family: 'Itim', cursive;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.788);
+}
+
+.abaixo {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: all ease 0.5s;
+    top: 50px;
+}
+
+.nav {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(137, 43, 226, 0.788);
+}
+
+.fundo_topo {
+    background-image: url('../images/background.jpg');
+    width: 100vw;
+    height: 60vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 10px 10px rgba(137, 43, 226, 0.404);
+    ;
+}
+
+.conteudo {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(137, 43, 226, 0.404);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    font-family: 'Itim', cursive;
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.788);
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+}
+
+.logo {
+    flex: 1;
+}
+
+.menu ul {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    width: 100%;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu li {
+    flex: 1;
+    font-size: 25px;
+    color: white;
+}
+
+.lista-drop {
+    display: none;
+    opacity: 0;
+    flex-direction: column;
+    border: 2px solid white;
+    color: white;
+    background-color: rgba(137, 43, 226, 0.788);
+    margin-left: 60px;
+    transition: linear ease 0.5s;
+    max-width: 200px;
+}
+
+.lista-drop2 {
+    display: none;
+    opacity: 0;
+    flex-direction: column;
+    border: 2px solid white;
+    color: white;
+    background-color: rgba(137, 43, 226, 0.788);
+    margin-left: 60px;
+    transition: linear ease 0.5s;
+    max-width: 400px;
+}
+
+.lista-drop3 {
+    display: none;
+    opacity: 0;
+    flex-direction: column;
+    border: 2px solid white;
+    color: white;
+    background-color: rgba(137, 43, 226, 0.788);
+    margin-left: 60px;
+    transition: linear ease 0.5s;
+    max-width: 400px;
+}
+
+.lista-drop li {
+    margin-left: 0;
+    padding: 10px;
+}
+
+.lista-drop2 li {
+    margin-left: 0;
+    padding: 10px;
+}
+
+.lista-drop3 li {
+    margin-left: 0;
+    padding: 10px;
+}
+
+.lista-drop li:hover {
+    background-color: rgb(137, 43, 226);
+}
+
+.lista-drop2 li:hover {
+    background-color: rgb(137, 43, 226);
+}
+
+.lista-drop3 li:hover {
+    background-color: rgb(137, 43, 226);
+}
+
+.bols {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bools {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: white;
+    margin: 25px;
+    margin-top: -100px !important;
+    box-shadow: 1px 2px 5px rgba(137, 43, 226, 0.788);
+    ;
+}
+
+.content-bol {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    height: 350px;
+}
+
+.descr-bols {
+    text-align: center;
+    color: rgba(137, 43, 226, 0.788);
+    font-family: 'Itim', cursive;
+    padding: 10px;
+}
+
+.levant {
+    background-image: url('../images/planejamento.png');
+}
+
+.codigo {
+    background-image: url('../images/codigo.png');
+}
+
+.entrega {
+    background-image: url('../images/site.png');
+}
+
+.seguranca {
+    background-image: url('../images/cadeado.png');
+}
+
+.dispf {
+    display: flex !important;
+    opacity: 1;
+}
+
+.dispf2 {
+    display: flex !important;
+    opacity: 1;
+}
+
+.dispf3 {
+    display: flex !important;
+    opacity: 1;
+}
+
+.setab {
+    margin: 0;
+    padding: 0;
+    height: 0;
+    width: 0;
+    border-top: 10px solid white;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    margin-left: 60px;
+}
+
+.setab2 {
+    margin: 0;
+    padding: 0;
+    height: 0;
+    width: 0;
+    border-top: 10px solid white;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    margin-left: 60px;
+}
+
+.setab3 {
+    margin: 0;
+    padding: 0;
+    height: 0;
+    width: 0;
+    border-top: 10px solid white;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    margin-left: 60px;
+}
+
+.setac {
+    margin: 0;
+    padding: 0;
+    height: 0;
+    width: 0;
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid white;
+    margin-left: 60px;
+}
+
+.setac2 {
+    margin: 0;
+    padding: 0;
+    height: 0;
+    width: 0;
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid white;
+    margin-left: 60px;
+}
+
+.setac3 {
+    margin: 0;
+    padding: 0;
+    height: 0;
+    width: 0;
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid white;
+    margin-left: 60px;
+}
+
+.text-apres {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    margin: 5px;
+}
+
+.img_ap {
+    width: 30%;
+}
+
+.img-ap-img {
+    height: 250px;
+    width: 250px;
+    border-radius: 125px;
+    box-shadow: 1px 2px 5px rgba(137, 43, 226, 0.788);
+}
+
+.text-ap {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 15px;
+}
+
+.fundo-ap-top {
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.fundo-ap-botton {
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.fundo-ap {
+    width: 50%;
+    height: 100%;
+}
+
+.part1 {
+    background-color: rgba(137, 43, 226, 0.788);
+}
+
+.part2 {
+    background-color: rgba(137, 43, 226, 0.404);
+}
+
+.part3 {
+    background-color: rgba(137, 43, 226, 0.404);
+}
+
+.part4 {
+    background-color: rgba(137, 43, 226, 0.788);
+}
+
+.text-ap-conteudo {
+    position: absolute;
+    background-color: white;
+    margin: 10px;
+}
+
+.port-icon {
+    display: flex;
+}
+
+.icon-sociais {
+    display: flex;
+    margin-top: -9px;
+}
+
+.icons {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    margin-left: 7px;
+}
+
+.face {
+    background-image: url('../images/logoFaceroxo.png');
+}
+
+.insta {
+    background-image: url('../images/logoinstaroxo.png');
+}
+
+.linked {
+    background-image: url('../images/loglinkediroxo.png');
+}
+
+.git {
+    background-image: url('../images/gitlogoroxo.png');
+}
+
+.titles {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid rgba(137, 43, 226, 0.144);
+}
+
+.titles span {
+    color: rgb(137, 43, 226);
+    font-size: 25px;
+    font-weight: bold;
+}

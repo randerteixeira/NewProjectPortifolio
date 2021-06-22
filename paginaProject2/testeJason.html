@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 25px;
+            text-align: center;
+            color: white;
+        }
+        
+        .contentor {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .btns {
+            align-content: center;
+        }
+        
+        .botao {
+            color: black;
+        }
+        
+        .sim,
+        .nao {
+            color: black;
+        }
+        
+        body {
+            background-color: pink;
+        }
+        
+        .display {
+            display: none;
+        }
+        
+        .displayf {
+            display: flex;
+        }
+        
+        .galeria {
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        
+        li {
+            margin: 10px;
+        }
+        
+        li img {
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="botao" onclick="comecar()">Aperte aqui</button>
+    <div class="contentor">
+        <div class="cabecalho"></div>
+        <div class="cabecalho2"></div>
+        <div class=" cabecalho3"></div>
+
+
+        <div class="btns display"> <button class="sim" onclick="sim()">sim </button>
+            <button class="nao" onclick="nao()">nao</button></div>
+    </div>
+    <div class=" content-galeria ">
+        <ul class="galeria display">
+            <li> <iframe width="560" height="315" src="https://www.youtube.com/embed/BR5d-kyvY7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+            <li><img src="img/img01.jpg" alt=""></li>
+            <li><img src="img/img02.jpg" alt=""></li>
+            <li><img src="img/img03.jpg" alt=""></li>
+            <li><img src="img/img04.jpg" alt=""></li>
+            <li><img src="img/img05.jpg" alt=""></li>
+            <li><img src="img/img06.jpg" alt=""></li>
+            <li><img src="img/img07.jpg" alt=""></li>
+            <li><img src="img/img08.jpg" alt=""></li>
+            <li><img src="img/img09.jpg" alt=""></li>
+            <li><img src="img/img10.jpg" alt=""></li>
+            <li><img src="img/img11.jpg" alt=""></li>
+            <li><img src="img/img12.jpg" alt=""></li>
+            <li><img src="img/img14.jpg" alt=""></li>
+            <li><img src="img/img15.jpg" alt=""></li>
+            <li><img src="img/img16.jpg" alt=""></li>
+            <li><img src="img/img17.jpg" alt=""></li>
+            <li><img src="img/img18.jpg" alt=""></li>
+            <li><img src="img/img19.jpg" alt=""></li>
+            <li><img src="img/img20.jpg" alt=""></li>
+            <li><img src="img/img21.jpg" alt=""></li>
+            <li><img src="img/img22.jpg" alt=""></li>
+            <li><img src="img/img23.jpg" alt=""></li>
+
+        </ul>
+    </div>
+    <script src="asside/pagina.js"></script>
+</body>
+
+</html>

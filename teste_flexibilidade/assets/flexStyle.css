@@ -1,0 +1,139 @@
+body {
+    display: flex;
+}
+
+.menu-opner {
+    height: 1000px;
+    background-color: aliceblue;
+    position: absolute;
+    overflow: hidden;
+}
+
+.open {
+    display: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    overflow: hidden;
+    border: 1px solid rgb(148, 146, 146);
+    background-image: url('img/1500312-icone-de-menu-de-marcadores-grátis-vetor.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 2000px;
+    background-color: aqua;
+}
+
+.menu-principal {
+    width: 100%;
+    background-color: green;
+    display: flex;
+}
+
+.menu-itens {
+    display: flex;
+    list-style: none;
+    flex: 1;
+}
+
+.menu-itens a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.menu-itens li {
+    flex: 1;
+}
+
+.banner {
+    width: 100%;
+    height: 50vh;
+    background-color: blueviolet;
+    overflow: hidden;
+}
+
+.title {
+    margin-top: 20px;
+    height: 30px;
+    width: 200px;
+    background-color: tomato;
+    margin-bottom: 20px;
+}
+
+.title2 {
+    align-self: flex-start;
+    height: 30px;
+    width: 200px;
+    background-color: tomato;
+    margin-bottom: 20px;
+}
+
+.on-text {
+    width: 100%;
+    height: 400px;
+    display: flex;
+}
+
+.img-text {
+    height: 300px;
+    width: 300px;
+    border-radius: 200px;
+    background-color: blue;
+    margin-left: 20px;
+}
+
+.text {
+    width: 50%;
+    height: 300px;
+    background-color: teal;
+}
+
+@media(max-width:750px) and (min-width:500px) {
+    .on-text {
+        flex-direction: column;
+        align-items: center;
+    }
+    .img-text {
+        width: 200px;
+        height: 200px;
+        border-radius: 200px;
+        margin: 20px;
+    }
+}
+
+@media(max-width:499px) and (min-width:200px) {
+    .on-text {
+        flex-direction: column;
+        align-items: center;
+    }
+    .img-text {
+        width: 200px;
+        height: 200px;
+        border-radius: 200px;
+        margin: 20px;
+    }
+    .open {
+        display: flex;
+    }
+    .menu-itens {
+        display: none;
+    }
+    .text {
+        width: 90%;
+        height: 300px;
+        background-color: teal;
+    }
+    .menu-principal {
+        width: 100%;
+        background-color: blueviolet;
+        display: flex;
+    }
+}

@@ -1,0 +1,91 @@
+@font-face {
+    font-family:'digitos' ;
+    src: url('DS-DIGIT.TTF');
+}
+body{
+    margin: 0;
+}
+*{
+    cursor: pointer;
+}
+.contentor{
+display: flex;
+margin: auto;
+    width: 500px;
+    height: 100vh;
+background-color:#f5f5dc ; 
+justify-content: center; 
+align-items: center; 
+flex-direction: column; 
+border: 1px solid black;
+}
+.display{
+    margin-top: 10px;
+    width: 90%;
+ 
+    height: 100px;
+    
+    background:linear-gradient(to right,#949292,#504e4e);
+    color:white;
+    font-size: 50px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+   font-family:digitos;
+}
+.keyboard{
+    flex: 1;
+    display: flex;
+   border:1px solid gray;
+   background-color: lavender;
+    width: 90%;
+    margin-top: 10px;
+  
+   
+}
+.btn{
+   display: flex;
+   align-items: center;
+   
+
+   font-size: 30px;
+   width: 90px;
+   height: 70px;
+    color: white;
+    background-color: #cccc;
+    margin: 10px;
+    flex-wrap: wrap;
+   justify-content: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px black;
+    
+}
+.btn:hover{
+   background-color: cornsilk;
+   color: #333;
+
+}
+
+.numbers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.clear{
+    color: red;
+    border: 1px solid red;
+}
+.oparations{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.oparations .btn{
+    background-color: black !important;
+    height:60px;
+}
+.igual{
+height: 120px !important;
+}
