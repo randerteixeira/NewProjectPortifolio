@@ -426,13 +426,93 @@ body{
     width: 100%;
     display: flex;
     flex-direction: column;
+    max-width: 1000px;
+    border: 2px solid rgb(137, 43, 226);
+    margin: auto;
+    padding: 20px;
 
 }
 .hab{
+    
     display:flex;
+    margin-bottom: 25px;
 }
 .hab-title{
     display: inline-block;
     font-size: 25px;
     color: rgb(137, 43, 226);
+margin-right: 10px;
+
 }
+.hab-barra{
+    flex:1;
+    border: 1px solid rgba(137, 43, 226, 0.788);
+    border-radius: 100px;
+    height: 20px;
+     background-color: rgba(137, 43, 226, 0.404);
+    margin-top: 5px;
+    
+}
+.hab_html{
+    height: 20px;
+    width: 90%;
+    background-color:  rgba(137, 43, 226, 0.788);
+    border-radius: 100px;
+
+}
+.hab_css{
+    height: 20px;
+    width: 80%;
+    background-color:  rgba(137, 43, 226, 0.788);
+    border-radius: 100px;
+
+}
+.hab_js{
+    height: 20px;
+    width: 65%;
+    background-color:  rgba(137, 43, 226, 0.788);
+    border-radius: 100px;
+   
+}
+   .hab_php{
+    height: 20px;
+    width: 45%;
+    background-color:  rgba(137, 43, 226, 0.788);
+    border-radius: 100px;
+   
+}
+   .hab_sql{
+    height: 20px;
+    width: 15%;
+    background-color:  rgba(137, 43, 226, 0.788);
+    border-radius: 100px;
+   
+}
+   .hab_git{
+    height: 20px;
+    width: 90%;
+    background-color:  rgba(137, 43, 226, 0.788);
+    border-radius: 100px;
+   
+}
+   .hab_node{
+    height: 20px;
+    width: 5%;
+    background-color:  rgba(137, 43, 226, 0.788);
+    border-radius: 100px;
+   
+}
+   .hab_react{
+    height: 20px;
+    width: 10%;
+    background-color:  rgba(137, 43, 226, 0.788);
+    border-radius: 100px;
+   
+}
+   .hab_react-N{
+    height: 20px;
+    width: 0%;
+    background-color:  rgba(137, 43, 226, 0.788);
+    border-radius: 100px;
+   
+   }
