@@ -4,10 +4,15 @@
     cursor: pointer;
     font-family: 'Itim', cursive;
 }
+body{
+    max-width: 1200px;
+    margin:auto;
+}
 
 .body {
     display: flex;
     justify-content: flex-start;
+ 
 }
 
 .acima {
@@ -34,7 +39,7 @@
 
 .nav {
     position: absolute;
-    width: 100%;
+   max-width:1200px;
     height: 40px;
     background-color: rgba(137, 43, 226, 0.788);
 }
@@ -73,7 +78,7 @@
 }
 
 .menu {
-    width: 100%;
+    
     display: flex;
     padding: 10px;
 }
@@ -86,7 +91,7 @@
     text-decoration: none;
     list-style: none;
     display: flex;
-    width: 100%;
+   
 }
 
 .menu li a {
@@ -377,6 +382,11 @@
     border-radius: 20px;
     background-color: aliceblue;
     margin-left: 7px;
+
+}
+.icons:hover{
+   border: 2px solid rgb(199, 4, 248);
+   margin-left: 5px;
 }
 
 .face {
@@ -411,4 +421,18 @@
     color: rgb(137, 43, 226);
     font-size: 25px;
     font-weight: bold;
+}
+.habilidades{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.hab{
+    display:flex;
+}
+.hab-title{
+    display: inline-block;
+    font-size: 25px;
+    color: rgb(137, 43, 226);
 }
