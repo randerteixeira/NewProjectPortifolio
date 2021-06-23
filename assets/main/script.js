@@ -104,10 +104,113 @@ window.addEventListener('resize', () => {
     document.querySelector('.text-ap-conteudo').style.width = `${medidaWidth-20}px`;
 
 })
+function porc(inicio,final){
+    return calculo=100-(((inicio-final)/inicio)*100);
+}
+function barracss(){
 let habNivel=document.querySelector('.hab_css').clientWidth;
 
 let habTotal=document.querySelector('.hab-barra').clientWidth;
-console.log(habNivel )
-console.log(habTotal)
-let calculo=100-(((habTotal-habNivel)/habTotal)*100);
-console.log( Math.round( calculo.toFixed(2)));
+
+let calculo= porc(habTotal,habNivel);
+document.querySelector('.hab_quant_css').innerHTML=Math.round( calculo.toFixed(2))+"%";
+}
+function barrahtml(){
+    let habNivel=document.querySelector('.hab_html').clientWidth;
+    
+    let habTotal=document.querySelector('.hab-barra').clientWidth;
+    
+    let calculo= porc(habTotal,habNivel);
+    document.querySelector('.hab_quant_html').innerHTML=Math.round( calculo.toFixed(2))+"%";
+    }
+    function barrajs(){
+        let habNivel=document.querySelector('.hab_js').clientWidth;
+        
+        let habTotal=document.querySelector('.hab-barra').clientWidth;
+        
+        let calculo= porc(habTotal,habNivel);
+        document.querySelector('.hab_quant_js').innerHTML=Math.round( calculo.toFixed(2))+"%";
+        }
+        function barraphp(){
+            let habNivel=document.querySelector('.hab_php').clientWidth;
+            
+            let habTotal=document.querySelector('.hab-barra').clientWidth;
+            
+            let calculo= porc(habTotal,habNivel);
+            document.querySelector('.hab_quant_php').innerHTML=Math.round( calculo.toFixed(2))+"%";
+            }
+            function barrasql(){
+                let habNivel=document.querySelector('.hab_sql').clientWidth;
+                
+                let habTotal=document.querySelector('.hab-barra').clientWidth;
+                
+                let calculo= porc(habTotal,habNivel);
+                document.querySelector('.hab_quant_sql').innerHTML=Math.round( calculo.toFixed(2))+"%";
+                }
+                function barragit(){
+                    let habNivel=document.querySelector('.hab_git').clientWidth;
+                    
+                    let habTotal=document.querySelector('.hab-barra').clientWidth;
+                    
+                    let calculo= porc(habTotal,habNivel);
+                    document.querySelector('.hab_quant_git').innerHTML=Math.round( calculo.toFixed(2))+"%";
+                    }
+                    function barranode(){
+                        let habNivel=document.querySelector('.hab_node').clientWidth;
+                        
+                        let habTotal=document.querySelector('.hab-barra').clientWidth;
+                        
+                        let calculo= porc(habTotal,habNivel);
+                        document.querySelector('.hab_quant_node').innerHTML=Math.round( calculo.toFixed(2))+"%";
+                        }
+                        function barranode(){
+                            let habNivel=document.querySelector('.hab_node').clientWidth;
+                            
+                            let habTotal=document.querySelector('.hab-barra').clientWidth;
+                            
+                            let calculo= porc(habTotal,habNivel);
+                            document.querySelector('.hab_quant_node').innerHTML=Math.round( calculo.toFixed(2))+"%";
+                            }
+                            function barrareact(){
+                                let habNivel=document.querySelector('.hab_react').clientWidth;
+                                
+                                let habTotal=document.querySelector('.hab-barra').clientWidth;
+                                
+                                let calculo= porc(habTotal,habNivel);
+                                document.querySelector('.hab_quant_react').innerHTML=Math.round( calculo.toFixed(2))+"%";
+                                }
+                                function barrareactN(){
+                                    let habNivel=document.querySelector('.hab_react-n').clientWidth;
+                                    
+                                    let habTotal=document.querySelector('.hab-barra').clientWidth;
+                                    
+                                    let calculo= porc(habTotal,habNivel);
+                                    document.querySelector('.hab_quant_react-n').innerHTML=Math.round( calculo.toFixed(2))+"%";
+                                    }
+                                    function barraboot(){
+                                        let habNivel=document.querySelector('.hab_boot').clientWidth;
+                                        
+                                        let habTotal=document.querySelector('.hab-barra').clientWidth;
+                                        
+                                        let calculo= porc(habTotal,habNivel);
+                                        document.querySelector('.hab_quant_boot').innerHTML=Math.round( calculo.toFixed(2))+"%";
+                                        }
+                                        function barralara(){
+                                            let habNivel=document.querySelector('.hab_lara').clientWidth;
+                                            
+                                            let habTotal=document.querySelector('.hab-barra').clientWidth;
+                                            
+                                            let calculo= porc(habTotal,habNivel);
+                                            document.querySelector('.hab_quant_lara').innerHTML=Math.round( calculo.toFixed(2))+"%";
+                                            }
+setTimeout(barracss,300);
+setTimeout(barrahtml,200);
+setTimeout(barrajs,400);
+setTimeout(barraphp,500);
+setTimeout(barrasql,600);
+setTimeout(barranode,700);
+setTimeout(barragit,400);
+setTimeout(barrareact,800);
+setTimeout(barrareactN,900);
+setTimeout(barraboot,1000);
+setTimeout(barralara,1100);

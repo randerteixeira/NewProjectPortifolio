@@ -521,8 +521,22 @@ margin-right: 10px;
 }
    .hab_react-N{
     height: 20px;
-    width: 0%;
+    width: 1%;
     background-color:  rgba(137, 43, 226, 0.788);
     border-radius: 100px;
    
    }
+   .hab_boot{
+    height: 20px;
+    width: 25%;
+    background-color:  rgba(137, 43, 226, 0.788);
+    border-radius: 100px;
+   
+}
+.hab_lara{
+    height: 20px;
+    width: 1%;
+    background-color:  rgba(137, 43, 226, 0.788);
+    border-radius: 100px;
+   
+}
