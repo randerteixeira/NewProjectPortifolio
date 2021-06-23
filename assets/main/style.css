@@ -438,6 +438,7 @@ body{
     margin-bottom: 25px;
 }
 .hab-title{
+    width: 20%;
     display: inline-block;
     font-size: 25px;
     color: rgb(137, 43, 226);
@@ -446,12 +447,21 @@ margin-right: 10px;
 }
 .hab-barra{
     flex:1;
+    display: flex;
     border: 1px solid rgba(137, 43, 226, 0.788);
     border-radius: 100px;
     height: 20px;
      background-color: rgba(137, 43, 226, 0.404);
     margin-top: 5px;
     
+
+    
+    
+}
+.hab_quant{
+    display:inline-flex ;
+    color: white;
+  
 }
 .hab_html{
     height: 20px;

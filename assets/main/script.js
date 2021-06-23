@@ -104,3 +104,10 @@ window.addEventListener('resize', () => {
     document.querySelector('.text-ap-conteudo').style.width = `${medidaWidth-20}px`;
 
 })
+let habNivel=document.querySelector('.hab_css').clientWidth;
+
+let habTotal=document.querySelector('.hab-barra').clientWidth;
+console.log(habNivel )
+console.log(habTotal)
+let calculo=100-(((habTotal-habNivel)/habTotal)*100);
+console.log( Math.round( calculo.toFixed(2)));
