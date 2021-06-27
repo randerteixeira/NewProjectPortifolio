@@ -93,6 +93,10 @@ body{
     display: flex;
    
 }
+.menu li img{
+    height: 50px;
+    width:60px;
+}
 
 .menu li a {
     text-decoration: none;
@@ -313,11 +317,10 @@ body{
     width: 30%;
 }
 
-.img-ap-img {
-    height: 250px;
-    width: 250px;
-    border-radius: 125px;
-    box-shadow: 1px 2px 5px rgba(137, 43, 226, 0.788);
+.img-ap-img img {
+    flex: 1;
+    
+
 }
 
 .text-ap {
@@ -365,6 +368,10 @@ body{
     position: absolute;
     background-color: white;
     margin: 10px;
+}
+.text-ap-conteudo img{
+    width: 100%;
+    height: 100%;
 }
 
 .port-icon {
@@ -426,9 +433,9 @@ body{
     width: 100%;
     display: flex;
     flex-direction: column;
-    max-width: 1000px;
+    max-width: 600px;
     border: 2px solid rgb(137, 43, 226);
-    margin: auto;
+  
     padding: 20px;
 
 }
@@ -440,7 +447,7 @@ body{
 .hab-title{
     width: 20%;
     display: inline-block;
-    font-size: 25px;
+    font-size: 18px;
     color: rgb(137, 43, 226);
 margin-right: 10px;
 
@@ -450,7 +457,7 @@ margin-right: 10px;
     display: flex;
     border: 1px solid rgba(137, 43, 226, 0.788);
     border-radius: 100px;
-    height: 20px;
+    height: 15px;
      background-color: rgba(137, 43, 226, 0.404);
     margin-top: 5px;
     
@@ -464,77 +471,77 @@ margin-right: 10px;
   
 }
 .hab_html{
-    height: 20px;
+    height: 15px;
     width: 90%;
     background-color:  rgba(137, 43, 226, 0.788);
     border-radius: 100px;
 
 }
 .hab_css{
-    height: 20px;
+    height: 15px;
     width: 80%;
     background-color:  rgba(137, 43, 226, 0.788);
     border-radius: 100px;
 
 }
 .hab_js{
-    height: 20px;
-    width: 65%;
+    height: 15px;
+    width: 82%;
     background-color:  rgba(137, 43, 226, 0.788);
     border-radius: 100px;
    
 }
    .hab_php{
-    height: 20px;
+    height: 15px;
     width: 45%;
     background-color:  rgba(137, 43, 226, 0.788);
     border-radius: 100px;
    
 }
    .hab_sql{
-    height: 20px;
+    height: 15px;
     width: 15%;
     background-color:  rgba(137, 43, 226, 0.788);
     border-radius: 100px;
    
 }
    .hab_git{
-    height: 20px;
+    height: 15px;
     width: 90%;
     background-color:  rgba(137, 43, 226, 0.788);
     border-radius: 100px;
    
 }
    .hab_node{
-    height: 20px;
+    height: 15px;
     width: 5%;
     background-color:  rgba(137, 43, 226, 0.788);
     border-radius: 100px;
    
 }
    .hab_react{
-    height: 20px;
+    height: 15px;
     width: 10%;
     background-color:  rgba(137, 43, 226, 0.788);
     border-radius: 100px;
    
 }
    .hab_react-N{
-    height: 20px;
+    height: 15px;
     width: 1%;
     background-color:  rgba(137, 43, 226, 0.788);
     border-radius: 100px;
    
    }
    .hab_boot{
-    height: 20px;
+    height: 15px;
     width: 25%;
     background-color:  rgba(137, 43, 226, 0.788);
     border-radius: 100px;
    
 }
 .hab_lara{
-    height: 20px;
+    height: 15px;
     width: 1%;
     background-color:  rgba(137, 43, 226, 0.788);
     border-radius: 100px;
